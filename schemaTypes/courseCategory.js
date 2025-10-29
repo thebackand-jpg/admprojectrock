@@ -32,14 +32,14 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
-      name: 'materials',
-      title: 'Materiais Didáticos',
-      type: 'image',
+    name: 'backgroundImageBooks',
+    title: 'Imagem de Fundo - Livros',
+    type: 'image',
       options: {
         hotspot: true,
       },
-      description: 'Imagens dos livros ou materiais didáticos',
-    },
+      validation: Rule => Rule.required(),  
+    }
   ],
   preview: {
     select: {
