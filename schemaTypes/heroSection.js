@@ -6,10 +6,15 @@ export default {
     {
       name: 'mainImage',
       title: 'Imagem Principal',
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
+      type: 'array',
+      of: [
+        {
+          type:'image',
+          options: {
+            hotspot: true,
+          },
+        },
+      ],
       validation: Rule => Rule.required(),
     },
   ],
