@@ -36,6 +36,13 @@ export default {
       type: 'boolean',
       initialValue: false,
     },
+    {
+      name: 'options',
+      title: 'Opções (para campos de seleção)',
+      type: 'array',
+      of: [{ type: 'string' }],
+      description: 'Adicione uma opção por linha (apenas para campos de tipo "select")',
+},
   ],
   preview: {
     select: {
