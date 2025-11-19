@@ -9,6 +9,12 @@ export default {
       type: 'string',
       validation: Rule => Rule.required(),
     },
+    {
+      name: 'anchor',
+      title: 'Âncora',
+      type: 'string',
+      description: 'Para links internos na mesma página (ex: #contato)',
+    },
   ],
   preview: {
     select: {
